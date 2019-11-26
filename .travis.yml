@@ -20,7 +20,7 @@ before_deploy:
   - npm run build
 
 deploy:
-  provider: github
+  provider: releases
   github_token: $GITHUB_TOKEN
   file: dist/**/*
   skip_cleanup: true
