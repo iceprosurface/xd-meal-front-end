@@ -9,14 +9,6 @@ script:
   - npm run lint:travis
   - npm run test:unit
 
-
-#指定分支，只有指定的分支提交时才会运行脚本
-branches:
-  only:
-    - master
-    - develop
-    - /v\d+\.\d+[a-z]/
-
 before_deploy:
   - npm run build
 
