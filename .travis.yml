@@ -26,4 +26,4 @@ deploy:
   file: dist/**/*
   cleanup: false
   on:
-    tags: false
+    tags: true
