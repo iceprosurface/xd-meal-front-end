@@ -22,7 +22,7 @@ before_deploy:
 
 deploy:
   provider: releases
-  github_token: $GITHUB_TOKEN
+  github_token: $GITHUB_OAUTH_TOKEN
   file: dist/**/*
   cleanup: false
   on:
