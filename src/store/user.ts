@@ -33,7 +33,7 @@ const state: IUserLoginGlobal = {
     randomForNoSpicy: Boolean(config.randomForNoSpicy),
     ppx: Boolean(config.ppx),
   },
-  wework_userid: null,
+  wework_userid: store.get('wework_userid'),
   avatar: store.get('avatar'),
 };
 export const USER_NAMESPACE = 'user/';
